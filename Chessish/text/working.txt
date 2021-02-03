@@ -1,0 +1,120 @@
+b
+Hey King, I think the Rook and the Knight both like me. Which one should I flirt with?
+Flirt with the knight _ Ugh, he was so rude. He kept talking about how strong he was. He needs to get off his high horse! _ trust _ -1
+Flirt with the rook _ He is so nice, and a poet as well! _ trust _ 1
+
+b
+Hey King, where is the Queen? 
+Bed _ In bed? With you? Disgusting! I didn’t need to know that! _ trust _ -1
+Kitchen _ In the kitchen? So sexist! _ trust _ -1
+
+b
+Hey King, the Knight just beat up the rook! Should I beat him up?
+Yes _ Thanks, I think I can beat him up as well _ morale _ 1
+No _ Wow! You don't think I can? So sexist! _ trust _ -1
+YESALT _ I beat him up, but now the rook is disappointed in me _ trust _ -1 _ r
+YESALT _ I should do that more often. Relieves my stress _ health _ 1
+
+b
+Hey King, my cousin was just captured. I need money for her release.
+Sure _ Thanks so much _ morale _ 1 _ s _ supplies _ -5 _ s
+No _ You are a horrible king. Why don’t you care about me or my family! _ morale _ -1 _ s _ trust _ -1 _ s
+YESALT _ She was freed. You are the best! _ morale _ 1 _ s
+YESALT _ They took the money and didn’t release her. I’ll never see her again. _ morale _ -2 _ s
+
+b
+My armor has been getting pretty rusty, can you replace it?
+Yes _ Thank you! _ morale _ 1 _ s _ health _ 1 _ s _ supplies _ -5 _ s
+No _ You suck! _ morale _ -1 _ s _ health _ -1 _ s
+
+b
+*You overhear the Bishop arguing with the Knight* 
+Ask Bishop if she needs help _ Thanks for asking. I'm worried about the Knight. Please talk to him _ trust _ 1
+Do nothing _ Bishop is seen later with scars on her arm _ health _ -2
+YESALT _ Knight swears at you _ trust _ -2 _ n
+YESALT _ Knight understands, and stops harassing the Bishop _ trust _ 1 _ s
+
+b
+Hey King, my brother was murdered by one of your men! 
+I will behead whoever did that _ Thank you, I knew you would understand! _ supplies _ -5 _ s _ morale _ 2 _ s
+The brother that murdered the pope? Of course he was! _ Are you serious! Unbelievable! _ trust _ -2 _ s _ morale _ -1 _ s
+
+b
+I broke my arm during a fight! I need medical attention!
+Don’t worry; here comes the medic now _ Thank you so much! _ supplies _ -4 _ s _ health _ 2 _ s
+We don’t have enough supplies _ I'm sure you spent them on your wife. _ morale _ -1 _ s _ health _ -1 _ s
+
+b
+*you “accidentally” killed the Bishop's dog* 
+Spread the blood all over the room _ Who could do such a thing? I’ve had her since she was a puppy _ morale _ -2
+Hide the body and eliminate any witnesses _ My dog ran away! _ morale _ -1
+YESALT _ The other side will pay for killing my dog! _ morale _ 3
+YESALT _ You did it, didn’t you? I always knew you hated her. _ trust _ -2
+NOALT _ I can’t fight like this. I need to look for him _ supplies _ -5
+NOALT _ I found his remains... in your room! _ trust _ -1 _ s _ morale _ -1 _ s
+
+p
+Hey King, All the pieces think I’m worthless. What do you think? 
+You are _ I knew it deep in my heart. _ morale _ -1
+No, you're awesome! _ Stop lying to me like everyone else in my life! _ trust _ -2
+
+p
+I don’t want to go to the doctor! 
+You need to! You're sick _ I hate you! _ health _ 2 _ s _ trust _ -1 _ s
+Fine, you're not worth my time _ Thanks! _ health _ -2 _ s _ trust _ 1 _ s
+
+p
+I don’t want to go to the doctor! 
+You need to! You're sick _ I hate you! _ health _ 2 _ s _ trust _ -1 _ s
+Fine, you're not worth my time _ Thanks! _ health _ -2 _ s _ trust _ 1 _ s
+
+p
+Hey King, That pawn over there won’t share her food! 
+Take food and give it to pawn _ Thanks! _ trust _ 1 _ s _ morale _ 1 _ s _ trust _ -2 _ p _ morale _ -1 _ p
+Buy new food for pawn _ Thanks! _ health _ 1 _ s _ morale _ 1 _ s _ supplies _ -5 _ s
+
+p
+I saw you kill the Bishop’s dog! I am going to report it!
+Kill the pawn _ AHHHHHHH! _ health _ -4
+Kill the Pawn’s dog _ Why would you do that!!! *at least the pawn was too sad to report you* _ morale _ -2
+
+p
+*a pawn has caught the black plague*
+Attempt to heal them with leeches _ Thank you king! _ supplies _ -5
+Leave pawn to die _ ugh... _ health _ -4
+YESALT _ I am cured! _ morale _ 2 _ s _ health _ 2 _ s
+YESALT _ Mr. King, I don’t feel so good... _ health _ -2
+
+p
+Hey King, the poor are not been looked after well! We are starving and have nowhere to go!
+Bye worthless scum _ You are not fit to rule! _ trust _ -2 _ s _ trust _ -2 _ p
+I will donate some food and shelter _ Thank you so much King! _ supplies _ -10
+NOALT _ *the shelter led to an outbreak of malaria* _ health _ -2 _ s _ health _ -2 _ p
+NOALT _ The pawns are more eager to fight for you and are more healthy! _ health _ 2 _ s _ health _ 2 _ p _ morale _ 1 _ s _ morale _ 1 _ p
+
+p
+Hey King, do I get life insurance? Like if I die will my family be compensated?
+Yeah _ Thank you so much! _ supplies _ -5 _ s _ trust _ 1 _ s
+No _ How could you? Why would I want to fight for you now! _ trust _ -1
+
+p
+You are not fit to rule. Let me, the leader of the PWU (pawn workforce union), take your role.
+To the front lines with you! Try ruling there _ I will be on that throne one day! _ health _ -2
+If you can prove your worth by finding out who is sleeping with my Queen _ Yes sir! _ trust _ 1 _ s _ trust _ -1 _ q
+
+p
+I have gathered valuable intel from the other side! I will tell you for a price!
+You will tell me or you will die _ Yes my lord. They have taken the bishop’s cousin captive _ morale _ -1 _ s _ morale _ -1 _ b
+Ok, what do you have to tell me? _ Oh this is some juicy intel! _ supplies _ -5
+NOALT _ They have received reinforcements of 5,000 men _ morale _ -1 _ s _ supplies _ -5 _ s
+NOALT _ I have found a hole in their wall, and I believe that we can infiltrate the castle with a small group of assassins! _ morale _ 1 _ s _ morale _ 1 _ r _ morale _ 1 _ b _ morale _ 1 _ n
+
+p
+Several of my comrades died in an artillery attack yesterday. I also broke both of my legs!
+Get back out there! _ As you wish _ morale _ -1 _ s _ health _ -1 _ s
+Take a rest _ Thank you so much *runs away* _ morale _ 1 _ s _ supplies _ -5
+
+p
+My name is Inigo Montoya, and you killed my father. Prepare to die!
+Kill him _ That's not how it was supposed to go. _ morale _ 0
+Show him that you don’t have four fingers _ Oh my mistake, here are some supplies for your trouble. _ supplies _ 5

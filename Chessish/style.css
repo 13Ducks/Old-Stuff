@@ -1,0 +1,12 @@
+* {
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: gray;
+  color: azure;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
